@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "524826640564",
+    "firebase_url": "https://merchant-app-9a2dc.firebaseio.com",
+    "project_id": "merchant-app-9a2dc",
+    "storage_bucket": "merchant-app-9a2dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524826640564:android:4d849f6c9152a61fa1d7e1",
+        "android_client_info": {
+          "package_name": "com.merchantapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524826640564-tq8q1hj4pg33in2i4lsi110j9399nqk8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.merchantapp",
+            "certificate_hash": "c145790ead53ae35f984acb0bf700e61ca2674fe"
+          }
+        },
+        {
+          "client_id": "524826640564-m2210kgcdtvu8aiuksojvd3lacd853fe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGcuE0ZboVUdYz-T3D4PBwWv6SUBQRRm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524826640564-m2210kgcdtvu8aiuksojvd3lacd853fe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
