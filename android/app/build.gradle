@@ -181,6 +181,19 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
+    // implementation (project(':react-native-maps')){
+    // exclude group: 'com.google.android.gms', module: 'play-services-base'
+    // exclude group: 'com.google.android.gms', module: 'play-services-maps'
+    // }    
+    implementation 'com.google.android.gms:play-services-base:10.0.1'
+    implementation 'com.google.android.gms:play-services-maps:10.0.1'
+    implementation "com.google.firebase:firebase-core:17.0.1"
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    implementation "com.google.firebase:firebase-messaging:19.0.1"
+    implementation 'me.leolin:ShortcutBadger:1.1.21@aar'
+
+        
+
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
@@ -199,3 +212,5 @@ task copyDownloadableDepsToLibs(type: Copy) {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+apply plugin: 'com.google.gms.google-services'

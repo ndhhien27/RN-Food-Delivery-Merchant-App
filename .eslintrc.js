@@ -22,6 +22,7 @@ module.exports = {
         "trailingComma": "all",
         "tabWidth": 2,
         "semi": true,
+        "printWidth": 80,
       }
     ],
     "react/prop-types": [0],

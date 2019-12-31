@@ -1,11 +1,14 @@
 /* eslint-disable import/prefer-default-export */
 export const theme = {
   color: {
-    primary: '#4486FF',
+    primary: '#ff5722',
+    lightBlue: '#00adb5',
     red: '#ff0000',
     darkGray: '#99999E',
-    gray: '#EDEDED',
+    gray: '#EDEDEE',
     grayLight: '#F2F2F7',
+    green: '#5FC85A',
+    lightGreen: '#62d2a2',
   },
   text: {
     fonts: {
@@ -33,5 +36,10 @@ export const theme = {
     md: 24,
     lg: 36,
     xl: 40,
+  },
+  icon: {
+    size: {
+      md: 28,
+    },
   },
 };

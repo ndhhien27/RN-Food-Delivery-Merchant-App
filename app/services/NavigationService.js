@@ -1,6 +1,31 @@
+/* eslint-disable no-underscore-dangle */
 import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { NavigationActions } from 'react-navigation';
 import IconWithBadge from '../components/IconWithBadge';
+
+let _navigator;
+
+export function setTopLevelNavigator(navigatorRef) {
+  _navigator = navigatorRef;
+}
+
+export function navigate(routeName, params) {
+  _navigator.dispatch(
+    NavigationActions.navigate({
+      routeName,
+      params,
+    }),
+  );
+}
+
+export function goBack(key) {
+  _navigator.dispatch(
+    NavigationActions.back({
+      key,
+    }),
+  );
+}
 
 export function getActiveRoute(navigationState) {
   if (!navigationState) {
@@ -25,8 +50,8 @@ export const getTabBarIcon = (navigation, focused, tintColor) => {
     case 'Menu':
       iconName = 'book-open-outline';
       break;
-    case 'Setting':
-      iconName = 'settings-outline';
+    case 'Account':
+      iconName = 'account-outline';
       break;
     case 'Notification':
       iconName = 'bell-outline';
@@ -39,7 +64,7 @@ export const getTabBarIcon = (navigation, focused, tintColor) => {
   return (
     <IconComponent
       name={iconName}
-      size={30}
+      size={28}
       color={tintColor}
       badgeCount={10}
     />
